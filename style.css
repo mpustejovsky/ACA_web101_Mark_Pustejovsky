@@ -26,14 +26,19 @@ p {
     vertical-align: top; 
 }
  
-  .has-border {
+a:link, a:visited {
     border-radius: 25px;
     border: 2px solid rgb(41, 7, 195);
     background: none;
     padding: 2px;
     font-size: 14px;
     vertical-align: top;  
+    display: inline-block;
+    text-decoration: none;
     
+  }
+  a:hover, a:active {
+    background-color: red;
   }
 .newitems {
     vertical-align: top; 

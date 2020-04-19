@@ -10,21 +10,41 @@
       <div class="header">
         <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo">
         <a href="https://mpustejovsky.github.io/ACA_web101_Mark_Pustejovsky/" target="_blank">Home</a>
-        <h1 class="w3-center">Here are some photo's of some how I spend my free time</h1>
-                  
+        <h1 class="w3-center"></h1>
+       
       </div>
-      <h2 class="w3-center">Photos of my German Shepard</h2>
+      <h2 class="w3-center">Story of Mark Pustejovsky</h2>
       <div class="w3-content w3-display-container">
-        <img class="Slides4" src="./cochise1.JPG" style="width:100%">
-        <img class="Slides4" src="./cochise2.JPG" style="width:100%">
-        <img class="Slides4" src="./cochise4.JPG" style="width:100%">
-        <img class="Slides4" src="./cochisewalking.jpg" style="width:100%">
-        <img class="Slides4" src="./Cochise3.JPG" style="width:100%">
-        <img class="Slides4" src="./cochise7.JPG" style="width:100%">
+        <img class="Slides4" src="./Capture1.JPG" style="width:100%">
+        <img class="Slides4" src="./Capture2.JPG" style="width:100%">
+        <img class="Slides4" src="./Capture3.JPG" style="width:100%">
+        <img class="Slides4" src="./Capture4.JPG" style="width:100%">
+        <img class="Slides4" src="./Capture5.JPG" style="width:100%">
+        <img class="Slides4" src="./Capture6.JPG" style="width:100%">
+        <img class="Slides4" src="./Capture7.JPG" style="width:100%">
+        <img class="Slides4" src="./Capture8.JPG" style="width:100%">
+        <img class="Slides4" src="./Capture9.JPG" style="width:100%">
+        <img class="Slides4" src="./Capture10.JPG" style="width:100%">
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs4(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs4(1)">&#10095;</button>
       </div>
       <br><br><br>
+
+      </div>
+      <h2 class="w3-center">Photo's of Cochise</h2>
+      <div class="w3-content w3-display-container">
+        <img class="Slides6" src="./cochise1.JPG" style="width:100%">
+        <img class="Slides6" src="./cochise2.JPG" style="width:100%">
+        <img class="Slides6" src="./cochise4.JPG" style="width:100%">
+        <img class="Slides6" src="./cochisewalking.jpg" style="width:100%">
+        <img class="Slides6" src="./Cochise3.JPG" style="width:100%">
+        <img class="Slides6" src="./cochise7.JPG" style="width:100%">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs6(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs6(1)">&#10095;</button>
+      </div>
+      <br><br><br>  
+
+     
       </div>
       <h2 class="w3-center">Photos of the Ranch</h2>
       <div class="w3-content w3-display-container">
@@ -118,6 +138,14 @@
           showDivs5(slideIndex5 += n);
         }
 
+        var slideIndex6 = 1;
+        showDivs6(slideIndex6);
+        
+        function plusDivs6(n) {
+          showDivs6(slideIndex6 += n);
+        }
+
+
         function showDivs(n) {
           var i;
           var x = document.getElementsByClassName("mySlides");
@@ -166,12 +194,25 @@
           var i;
           var x = document.getElementsByClassName("Slides5");
           if (n > x.length) {slideIndex5 = 1}
-          if (n < 1) {slideIndex4 = x.length}
+          if (n < 1) {slideIndex5 = x.length}
           for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
           }
           x[slideIndex5-1].style.display = "block";  
         }
+        function showDivs6(n) {
+          var i;
+          var x = document.getElementsByClassName("Slides6");
+          if (n > x.length) {slideIndex6 = 1}
+          if (n < 1) {slideIndex6 = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex6-1].style.display = "block";  
+        }
+
+
+
         </script>
     </body>
     </html>

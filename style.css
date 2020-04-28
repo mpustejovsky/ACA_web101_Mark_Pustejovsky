@@ -40,11 +40,12 @@ a:link, a:visited {
     background-color: red;
   }
 
-button > a:link, button > a:visited {
+.button:link, .button:visited {
   border-radius: 50px;
   border: 0px;
-  background: none;
+  background-color: black;  
   padding: 10px;
+  padding-top:25px;
   font-size: 20px;
   vertical-align: top;  
   display: inline-block;
@@ -52,7 +53,7 @@ button > a:link, button > a:visited {
   color: red; 
 }
 
-button > a:hover, button > a:active {
+.button:hover, .button:active {
   background-color: gray;
 }
 .newitems {
@@ -95,7 +96,7 @@ button > a:hover, button > a:active {
     padding: 10px;
     height: 600px; /* Should be removed. Only for demonstration */
   }
-  button {
+  .button {
     grid-column: 2/3;
     margin: 3% 18% 3%;
     width: 70%;

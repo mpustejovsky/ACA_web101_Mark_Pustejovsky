@@ -34,12 +34,27 @@ a:link, a:visited {
     font-size: 14px;
     vertical-align: top;  
     display: inline-block;
-    text-decoration: none;
-    
+    text-decoration: none;    
   }
   a:hover, a:active {
     background-color: red;
   }
+
+button > a:link, button > a:visited {
+  border-radius: 50px;
+  border: 0px;
+  background: none;
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: top;  
+  display: inline-block;
+  text-decoration: none;   
+  color: red; 
+}
+
+button > a:hover, button > a:active {
+  background-color: gray;
+}
 .newitems {
     vertical-align: top; 
     font-size: 14px;

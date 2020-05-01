@@ -1,0 +1,138 @@
+
+
+.topsec {
+  grid-area: "marks";
+  text-align: center;
+  font-size: 30px;
+  padding:20px;
+  color: lightgreen;
+  display: block;
+  background-color:gray;
+  padding-left: 4px;
+  padding-right: 20px;
+  border-color:black;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-right-style: solid;
+  position: relative;
+  height: 100px;
+}
+
+.topsec > a {
+  position: absolute;
+  top: 75%;
+  transform: translateY(-1%);
+  left: 0.5%;
+  font-size: 16px;
+  text-align: left;
+}
+
+
+
+.Step1 {
+  padding: 0px;
+  padding-top: 0px;
+  grid-area: st1;
+}
+.Step2 {
+  padding-bottom: 20 px;
+  padding-top: 0px;
+  grid-area: st2;
+
+  padding-left: 35px;
+  
+}
+
+.Step2 input {
+  display: inline-block;
+  
+}
+.Step3 {
+  padding-bottom: 20 px;
+  padding-top: 20px;
+  grid-area: st3;
+ 
+}
+.Step4 {
+  padding-bottom: 20 px;
+  padding-top: 20px;
+  grid-area: st4;
+}
+.Step5 {
+  padding-bottom: 20 px;
+  padding-top: 20px;
+  grid-area: st5;
+  position: relative;
+}
+
+ button {
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  transform: translateY(-30%);
+  
+}
+ 
+body {
+  background-color: gray;
+}
+
+.Stepblank {
+  padding-bottom: 20 px;
+  padding-top: 20px;
+  grid-area: stblank;
+}
+.Step1, .Step2, .Step3, .Step4, .Step5, .Stepblank{
+  display: block;
+  background-color:gray;
+  color: white;
+  padding-left: 4px;
+  padding-right: 20px;
+  border: gray;
+  border-width: 20px;
+}
+
+.Step2, .Step1{
+  padding-top: 10px;
+}
+
+body {
+  margin: 5% auto;
+  width: 100%;
+  height: auto;
+  
+  
+
+  
+}
+
+@media (max-width: 656px) {
+  .container {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "st1"
+      "st2"
+      "st3"
+      "st4"
+      "st5"
+      "stblank"
+  }
+
+  button {
+    height: 200%;
+    width: 30%;
+  }
+  
+}
+
+      
+      @media (min-width: 655px) {
+        .ContactData {
+          display: grid;
+            grid-auto-columns: 45% 45% 10%;
+            grid-template-areas: 
+            "st1 st2 stblank"
+            "st3 st4 st5"
+          }
+
+      }

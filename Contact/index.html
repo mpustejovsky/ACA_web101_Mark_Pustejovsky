@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <title>Document</title>
+</head>
+<body>
+   <div class ="topsec">Contact Me<br><a>Please fill out the information for me to contact you.<br>Items with * are required.<br></a></div>
+
+  <form class="ContactData" onsubmit= "myFunction()">
+    <div class="Step1">
+     
+      
+    <label for="first-name">*First Name:</label>
+    <!-- the "onkeyup" event listener passes its input's "value" to the "saveFirstNumber" function in the main.js file -->
+    <input type="text" id="first-Name" name="first-Name" placeholder="type your first name" required onkeyup="saveFirstName(this.value)">
+    <h9><br></h9>
+    <label for="last-name"><br>*Last Name:</label>
+    <input type="text" id="last-Name" name="last-Name" placeholder="type your last name" required>
+    <h9><br></h9>
+    <label for="email-address"><br>*Email address:</label>
+    <input type="email" id="email-address" name="email-address" formnovalidate="formnovalidate" placeholder="type your email address" required>
+    
+    <h7><br> </h7>  
+  </div>
+    <div class="Step2">
+      <a>How did you here about me?<br></a>
+      <!-- the "onclick" event listener passes its element's "id" to the "changeOperation" function in the main.js file -->
+      
+        <input class="where" type="radio" name="source" value="Classmate" checked>
+        <label>Classmate</label><br>
+        <input class="where" type="radio" name="source" value="Resume">
+        <label>Resume Submission</label><br>
+      
+          <input class="where" type="radio" name="source" value="Linkedin">
+          <label>LinkedIn</label><br>
+           <input class="where" type="radio" name="source" value="Coding">
+           <label>Coding Academy</label><br>
+        <input class="where" type="radio" name="source" value="Workplace">
+        <label>Workplace</label><br>
+      
+    </div>
+   
+    <div class="Step3">
+      <a>Enter your Birthday, if you want to receive special deals from me on your b-day.(optional)<br></a>
+    <!-- this "onclick" calls the "equal" function in the main.js file -->
+        <input type="date" id="bday" name="bday" >  
+    
+    
+  </div>
+  <div class="Step4">
+    <a>Enter a message of how I can help you<br></a>
+    <textarea rows="4" cols="50" placeholder="comments......"></textarea>
+  </div>
+  <div class = "Step5">
+    <button class="submitbutton" type="submit">Submit</button>
+    </div>
+    <div class="Stepblank"></div>
+  </form>
+  
+</body>
+</html>
